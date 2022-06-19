@@ -394,6 +394,22 @@
             </li>
           </ul>
         </div>
+        <div class="footsubscribe">
+          <p class="footformhed">Подпишитесь на рассылку</p>
+          <form action="" class="footform">
+            <label for="email"></label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              autocomplete="off"
+              class="footinput"
+              placeholder="E-mail"
+              required
+            />
+            <button type="submit" class="footsubbutt">Подписаться</button>
+          </form>
+        </div>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
@@ -403,6 +419,76 @@
             <use href="./images/sprite.svg#close"></use>
           </svg>
         </button>
+        <h2 class="modalhead">Оставьте свои данные, мы вам перезвоним</h2>
+        <form action="" class="modalform">
+          <div class="formdiv">
+            <label for="name" class="modallabel">Имя</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              class="modalinput"
+              autocomplete="off"
+              required
+            />
+            <svg width="18" height="18" class="">
+              <use href="./images/sprite.svg#person"></use>
+            </svg>
+          </div>
+          <div class="formdiv">
+            <label for="tel" class="modallabel">Телефон</label>
+            <input
+              type="tel"
+              name="tel"
+              id="tel"
+              class="modalinput"
+              autocomplete="off"
+              required
+            />
+            <svg width="18" height="18" class="">
+              <use href="./images/sprite.svg#phone"></use>
+            </svg>
+          </div>
+          <div class="formdiv">
+            <label for="email" class="modallabel">Почта</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="modalinput"
+              autocomplete="off"
+              required
+            />
+            <svg width="18" height="18" class="">
+              <use href="./images/sprite.svg#email2"></use>
+            </svg>
+          </div>
+          <label for="comment" class="modallabel">Комментарий</label>
+          <textarea
+            name="comment"
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="Введите текст"
+            class="modalinput modaltextarea"
+          ></textarea>
+          <div class="modalagrbox">
+            <label for="agree" class="modalagree"
+              ><input
+                type="checkbox"
+                type="agree"
+                name="agree"
+                id="agree"
+                class="modalcheckbox"
+                required
+              /><span class="betterbox"></span>Соглашаюсь с рассылкой и принимаю
+              <a href="" class="modalagree modallink">
+                Условия договора</a
+              ></label
+            >
+          </div>
+          <button type="submit" class="modalsubmit">Отправить</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
